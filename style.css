@@ -1,0 +1,586 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+
+}
+
+span{
+	color: #0892fd;
+}
+
+nav .container {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+nav .container .branding-logo{
+	width: 15%;
+
+}
+
+nav .container .branding-logo a{
+	text-decoration: none;
+	color: black;
+}
+
+
+
+nav .container .branding-logo img{
+	width: 50%;
+	height: auto;
+
+}
+
+
+nav .container ul{
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+
+nav .container ul li{
+	list-style-type: none;
+}
+
+
+nav .container ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 1.5rem;
+	color: black;
+}
+
+nav .container ul li .active{
+	background-color: #0892fd;
+	color: white;
+}
+
+nav .container ul li .active:hover{
+	color: black;
+	transition: 0.8s ease-in-out;
+}
+
+nav .container ul li a .magnifying-glass{
+	width: 18px;
+}
+
+
+/*Toggle btn*/
+nav .container .toggle-btn{
+	display: flex;
+	flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:40px;
+    /*height: 35px;*/
+}
+
+nav .container .toggle-btn .bar{
+	width: 100%;
+	height: 5px;
+	margin: 4px 0;
+	background-color: #0892fd;
+}
+
+
+/*============================*/
+/*HERO BANNER SECTION*/
+section .hero-banner{
+	background-image: url('./assets/images/windows.jpg');
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80vh;
+
+}
+
+/*TO CREATE OVERLAY TO THE BACKGROUND IMAGE*/
+section .hero-banner .hero-banner-overlay{
+	width: 100%;
+	height: 100%;
+	background-color: #07528c;
+	opacity: 0.2;
+	z-index: -1;
+}
+
+
+section .hero-banner .hero-content-text{
+	position: absolute;
+	top: 40%;
+	left: 10%;
+}
+
+section .hero-banner .hero-content-text h1{
+	color: white;
+	font-size: 3rem;
+}
+
+section .hero-banner .hero-content-text h2{
+	color: #0892fd;
+	font-size: 2rem;
+}
+
+section .hero-banner .hero-content-text p{
+	color: white;
+	font-size: 18px;
+}
+
+section .hero-banner .hero-content-text .contact-us{
+	border: none;
+	background-color: #0892fd;
+	padding: 10px 10px;
+	margin: 20px 0px;
+	color: white;
+}
+
+section .hero-banner .hero-content-text .contact-us:hover{
+	cursor: pointer;
+}
+
+
+
+
+/*============================*/
+/*WE CAN HELP YOUR CARRER GROW*/
+section .we-can-help{
+	width: 100%;
+	text-align: center;
+	padding:3% 5%;
+}
+
+.hr-we-can-help{
+	margin: 0 40%;
+	background-color: #0892fd;
+}
+
+section .we-can-help h3{
+	font-size: 25px;
+	font-weight: 400;
+}
+
+section .we-can-help .three-box-section{
+	display: flex;
+	padding: 3% 10%;
+	align-items: center;
+	justify-content: space-around;
+}
+
+section .we-can-help .three-box-section .box{
+	width: 25%;
+	height: auto;
+	background-color: red;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	box-shadow: 0 3px 20px rgb(0 0 0 / 0.5);
+}
+
+/*BOX BOB ANIMATION EFFECTS*/
+@-webkit-keyframes box {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes box {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes box-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes box-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+.box {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.box:hover, .box:focus, .box:active {
+  -webkit-animation-name: box-float, box;
+  animation-name: box-float, box;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+  cursor: pointer;
+
+}
+
+/*BOX BOB ANIMATION EFFECTS*/
+
+section .we-can-help .three-box-section .box h4{
+	font-size: 20px;
+	color: #0892fd;
+}
+
+
+
+
+
+/*============================*/
+/*EXPAND-YOUR-KNOWLEDGE*/
+section .expand-your-knowledge{
+	width: 100%;
+	background-color: #0096d5;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding:3% 5%;
+}
+
+
+section .expand-your-knowledge img{
+	width: 100%;
+	height: auto;
+}
+
+section .expand-your-knowledge .container h3{
+	font-size: 25px;
+	color: white;
+	margin: 2% 0;
+}
+section .expand-your-knowledge .container p{
+	font-size: 15px;
+	color: white;
+	margin: 2% 0;
+}
+
+/*GLOBAL STYLE BTN*/
+.btn-global{
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	border:none;
+	padding: 10px 10px;
+	margin: 2% 0;
+}
+
+
+
+
+/*============================*/
+/*PUT YOUR LEARNING INTO PRACTICE*/
+section .put-your-learning{
+	padding:3% 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+section .put-your-learning h3{
+	font-size: 25px;
+	text-align: center;
+	margin: 2% 0;
+}
+
+section .put-your-learning .dev-tool-images{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 2% 0;
+}
+
+section .put-your-learning .dev-tool-images img {
+	width: 25%;
+	height: auto;
+}
+section .put-your-learning p{
+	font-size: 15px;
+	padding: 0 5%;
+}
+
+
+/*============================*/
+/*EXPAND-YOUR-KNOWLEDGE*/
+section .expand-your-knowledge2{
+	width: 100%;
+	background-color: #0096d5;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding:3% 5%;
+}
+
+
+section .expand-your-knowledge2 img{
+	width: 100%;
+	height: auto;
+}
+
+section .expand-your-knowledge2 .container h3{
+	font-size: 25px;
+	color: white;
+	margin: 2% 0;
+}
+section .expand-your-knowledge2 .container p{
+	font-size: 15px;
+	color: white;
+	margin: 2% 0;
+}
+
+
+/*============================*/
+/*FOOTER SECTION*/
+footer .footer-container{
+	width: 100%;
+	background-color: white;
+	padding:3% 5%;
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+}
+
+footer .footer-container .container{
+	width: 15%;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+footer .footer-container .container img{
+	width: 60%;
+	height: auto;
+}
+
+footer .footer-container .container .social-media-container{
+	display: flex;
+	flex-direction: row;
+	width: 200px;
+
+}
+
+footer .footer-container .container .social-media-container .fab{
+	margin-right: 20px;
+	color: #0892fd;
+}
+
+footer .footer-container .container a{
+	color: #0892fd;
+	text-decoration: none;
+}
+
+
+
+
+
+
+/*Queries Responsiveness*/
+@media screen and (max-width: 1920px){
+	nav .container .toggle-btn {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	section .hero-banner {
+		height: 50vh;
+	}
+
+	/*WE CAN HELP YOUR CAREER GROW*/
+	section .we-can-help .three-box-section {
+		padding: 5px 0;
+		margin: 15px 0;
+	}
+
+	section .we-can-help .three-box-section .box {
+		width: 30%;
+	}
+
+	section .we-can-help .three-box-section .box {
+		padding: 3px;
+	}
+
+	/*EXPAND YOUR KNOWLEDGE STEP BY STEP*/
+	section .expand-your-knowledge2 img {
+		width:50%;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+	nav .container .toggle-btn {
+		display: block;
+
+	}
+	/* nav .container ul{
+		display: none;
+	} */
+
+	nav .container .nav-menu{
+		position: fixed;
+		top: 6.1rem;
+		left: -100%;
+		z-index: 1;
+		flex-direction: column;
+		width: 100%;
+		background-color: #0096d5;
+		text-align: center;
+		transition: 0.5s ease-in-out;
+	}
+
+	nav .container .nav-menu.active{
+		left: 0;
+	}
+
+	nav .container .toggle-btn.active .bar:nth-child(1){
+		transform: translateY(8px) rotate(45deg);
+	}
+	nav .container .toggle-btn.active .bar:nth-child(2){
+		opacity: 0;
+	}
+	nav .container .toggle-btn.active .bar:nth-child(3){
+		transform: translateY(-8px) rotate(-45deg);
+	}
+
+	nav .container .nav-menu .nav-items a{
+		color: white;
+	}
+
+	nav .container .branding-logo {
+		width: 18%;
+	}
+	section .expand-your-knowledge img {
+		width: 60%;
+	}	
+}
+
+@media screen and (max-width: 414px){
+	nav .container .branding-logo {
+		width: 45%;
+	}
+
+	section .hero-banner .hero-content-text {
+		top: 30%;
+		left: 1%;
+	}
+
+	section .hero-banner .hero-content-text h1 {
+		font-size: 1.4rem;
+	}
+	section .hero-banner .hero-content-text h2 {
+		font-size: 1rem;
+	}
+
+	section .we-can-help .three-box-section {
+		flex-direction: column;
+	}
+	section .we-can-help .three-box-section .box {
+		width: 90%;
+		margin: 2% 0;
+	}
+
+	section .expand-your-knowledge {
+		flex-direction: column;
+	}
+
+	section .expand-your-knowledge img {
+		width: 80%;
+		margin-bottom: 2%;
+	}
+
+	section .put-your-learning .dev-tool-images {
+		flex-direction: column;
+	}
+
+	section .put-your-learning .dev-tool-images img {
+		width: 85%;
+		margin: 2% 0;
+	}
+
+	section .expand-your-knowledge2 {
+		flex-direction: column;
+	}
+
+	section .expand-your-knowledge2 img {
+		width: 80%;
+		margin-bottom: 2%;
+	}
+	section .expand-your-knowledge2 {
+		flex-direction: column-reverse;
+	}
+
+	footer .footer-container {
+		flex-direction: column;
+	}
+
+	footer .footer-container .container {
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		margin: 2% 0;
+	}
+
+	footer .footer-container .container .social-media-container {
+		justify-content: center;
+		width: 0;
+	}
+
+	footer .footer-container .newsletter{
+		text-align: center;
+		margin-top: 3%;
+	}
+
+	footer .footer-container input{
+		width: 100%;
+		height: auto;
+	}
+	.hr-we-can-help {
+		margin: 0 10%;
+	}
+
+}
+
+
+@media screen and (max-width: 320px){
+		section .hero-banner .hero-content-text{
+			top: 15%;
+		}
+	}
